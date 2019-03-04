@@ -18,10 +18,15 @@ quizes = (function () {
 })();
 
 $(document).ready(function () {
+     
      $('.user_form').hide() // hide at first
      $('.timer').hide() // hide at first
      $('.quiz').hide() // hide at first
      $('#scores').hide();
+
+     $('#submit_quiz').click(function() {
+          calculateScores();
+     });
 
      $('.quiz_choice').click(function () { // toggler
           $('.quizes_container').hide()

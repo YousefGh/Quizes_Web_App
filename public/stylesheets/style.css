@@ -143,7 +143,9 @@ header {
 }
 
 #next_q,
-#prev_q {
+#prev_q,
+#submit_quiz {
+  margin: 0 auto;
   margin-top: 5%;
   font-size: 1em;
   background-color: inherit;
@@ -151,11 +153,17 @@ header {
   color: #fff;
   cursor: pointer;
   padding: 1% 8% 1% 8%;
+  transform: translateX(60%);
   transition-duration: .4s;
 }
 
+#submit_quiz {
+  /* float: right; */
+  transform: translateX(70%);
+}
 #next_q:hover,
-#prev_q:hover {
+#prev_q:hover,
+#submit_quiz:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid #fff;

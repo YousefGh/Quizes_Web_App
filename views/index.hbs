@@ -1,0 +1,84 @@
+<div class="wrapper">
+
+     <header>
+          <img id="kfupm_logo" src="images/logo.png" alt="KFUPM Logo">
+          <h2>
+               Welcome to KFUPM Quizes
+          </h2>
+     </header>
+
+     <div id="scores">
+          <div>
+               <span id="name">fff</span>, Your total grade is
+               <span id="grade">12</span> After solving 10 questions
+          </div>
+
+          <div id="piechart_correct">
+          </div>
+
+          <div id="piechart_partial">
+          </div>
+     </div>
+
+
+     <div class="timer">
+          <label id="minutes">12</label>:<label id="seconds">00</label>
+     </div>
+
+     <div class="quiz">
+
+          <h2 id="question">Q
+          </h2>
+
+          <div class="choices_radio">
+               <input name="choices" type="radio" id="choice1">
+               <label class="choices" id="choice1_label" for="choice1"></label>
+
+               <input name="choices" type="radio" id="choice2">
+               <label class="choices" id="choice2_label" for="choice2"></label>
+
+               <input name="choices" type="radio" id="choice3">
+               <label class="choices" id="choice3_label" for="choice3"></label>
+
+               <input name="choices" type="radio" id="choice4">
+               <label class="choices" id="choice4_label" for="choice4"></label>
+          </div>
+
+          <input id="prev_q" value="Back" type="button">
+          <input id="next_q" value="Next" type="button">
+
+     </div>
+
+     <div class="user_form">
+          <form id="user_form">
+               <!-- Name-->
+               <div class="input_form">
+                    <label for="user_name">Name</label>
+                    <input type="text" id="user_name" required>
+               </div>
+
+               <!-- Email-->
+               <div class="input_form">
+                    <label for="user_email">Email</label>
+                    <input type="email" id="user_email" required>
+               </div>
+               <input type="button" value="Change quiz" id="back">
+               <input onclick="return validate()" value="Start" type="submit" id="submit">
+          </form>
+     </div>
+
+     <div class="quizes_container">
+          <div id="quiz1" class="quiz_choice">
+               Quiz 1
+          </div>
+          <div id="quiz2" class="quiz_choice">
+               Quiz 2
+          </div>
+          <div id="quiz3" class="quiz_choice">
+               Quiz 3
+          </div>
+          <div id="quiz4" class="quiz_choice">
+               Quiz 4
+          </div>
+     </div>
+</div>

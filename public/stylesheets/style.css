@@ -1,0 +1,198 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: 1.3vw "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  margin-top: 2%;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+#kfupm_logo {
+  width: 11vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.quizes_container {
+  margin-top: 6%;
+}
+
+.quiz_choice {
+  font-size: 1.2em;
+  display: inline;
+  margin: 0 3% 0 3%;
+  padding: 1% 2% 1% 2%;
+  border: 2px solid rgba(255, 255, 255, .4);
+  cursor: pointer;
+  transition-duration: .4s;
+}
+
+.quiz_choice:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.user_form {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.16);
+  margin-top: 4%;
+  width: 35%;
+  font-size: 1.5em;
+  height: 15vw;
+  padding: .2%;
+}
+
+.input_form {
+  margin-top: 5%;
+}
+
+.input_form input {
+  color: #fff;
+  font-size: 1em;
+  width: 70%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  caret-color: rgba(255, 255, 255, 0.4);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin-left: 2%;
+  background-color: inherit;
+}
+
+.user_form #submit {
+  margin-top: 8%;
+  font-size: 1em;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, .4);
+  color: #fff;
+  cursor: pointer;
+  padding: 1% 8% 1% 8%;
+  transition-duration: .4s;
+}
+
+.user_form #submit:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.user_form #back {
+  margin-top: 8%;
+  font-size: 1em;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, .4);
+  color: #fff;
+  cursor: pointer;
+  padding: 1% 8% 1% 8%;
+  transition-duration: .4s;
+}
+
+.user_form #back:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.quiz {
+  position: relative;
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.16);
+  width: 60%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.quiz .choices_radio {
+  width: 100%;
+}
+
+.quiz .choices_radio label {
+  cursor: pointer;
+  display: block;
+  width: 50%;
+  border-left: 6px solid gray;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1%;
+  margin-top: 2%;
+  transition-duration: .4s;
+}
+
+.quiz .choices_radio input {
+  display: none;
+}
+
+.quiz .choices_radio input:checked+label {
+  border-left: 6px solid orange;
+}
+
+#next_q,
+#prev_q {
+  margin-top: 5%;
+  font-size: 1em;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, .4);
+  color: #fff;
+  cursor: pointer;
+  padding: 1% 8% 1% 8%;
+  transition-duration: .4s;
+}
+
+#next_q:hover,
+#prev_q:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+#next_q:disabled,
+#prev_q:disabled {
+  background-color: #ffffff55;
+  color: #000;
+  border: 2px solid #ffffff55;
+  cursor: not-allowed;
+}
+
+.timer {
+  font-size: 3em;
+  margin-top: 2%;
+}
+
+#scores {
+  margin-top: 2%;
+  font-size: 2vw;
+}
+
+#grade {
+  color: orange;
+}
+
+#name {
+  color: orange;
+}
+
+#piechart_correct {
+  display: inline-block;
+  margin-top: 4%;
+}
+
+#piechart_partial {
+  display: inline-block;
+  margin-top: 4%;
+}

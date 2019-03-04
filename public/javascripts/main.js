@@ -5,7 +5,7 @@ questionIndex = 0; // question number
 quizes = (function () {
      var json = null;
      $.ajax({
-          'async': false,
+          'async': false, // asyc call false (blocking; sych)
           'global': false,
           'url': "/javascripts/quizes.json",
           'dataType': "json",
@@ -61,7 +61,7 @@ $(document).ready(function () {
 });
 
 function startFirstQuiz() {
-     startTimer(15) // 12 minutes
+     startTimer(720) // 12 minutes
 
      // retreive Quiz
      var quizName = localStorage.getItem('quiz_chosen');
@@ -275,7 +275,7 @@ function startTimer(totalSeconds) {
                     $('#choice3').attr('type', 'checkbox');
                     $('#choice4').attr('type', 'checkbox');
 
-                    totalSeconds = 30;
+                    totalSeconds = 480;
                }
                // This timer interval stopper was taken from
                // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascrip

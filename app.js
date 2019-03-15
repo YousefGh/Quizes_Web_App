@@ -8,10 +8,6 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-var http = require("http");
-setInterval(function() {
-    http.get("https://kfupm-quizes.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +20,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+
+var http = require("http");
+setInterval(function() {
+    http.get("https://y-weather-app.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -66,7 +66,7 @@ $(document).ready(function () {
 });
 
 function startFirstQuiz() {
-     startTimer(720) // 12 minutes
+     startTimer(30) // 12 minutes
 
      // retreive Quiz
      var quizName = localStorage.getItem('quiz_chosen');
@@ -280,7 +280,7 @@ function startTimer(totalSeconds) {
                     $('#choice3').attr('type', 'checkbox');
                     $('#choice4').attr('type', 'checkbox');
 
-                    totalSeconds = 480;
+                    totalSeconds = 60;
                }
                // This timer interval stopper was taken from
                // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascrip
